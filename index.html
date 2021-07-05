@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <div>
+     <h1 id="h1">WELCOME</h1>
+        <select name="" id="background" onclick="myfunction()"> 
+            <option value="" selected disabled hidden>CHOOSE BACKGROUND COLOR</option>
+            <option value="">BLUE</option>
+            <option value="">RED</option>
+            <option value="">GREEN</option>
+            <option value="">BLACK</option>
+
+        </select>
+    
+    </div>
+    <br>
+    <div class="container">
+        
+            <button class="main-btn" onclick="counter()">COUNTER</button>
+        
+        
+            <button class="main-btn" onclick="voter()">VOTE YOUR LANGUAGE</button>
+        
+    </div>
+
+    <section id="counter-section">
+        <div id="counter">
+        <h1 id="value1">0</h1>
+        </div>
+    
+    <div class="inc-dec">
+        <button class="btn-green btn" id="increment" onclick="increment()"  > + </button>
+        <button class="btn-yellow btn" onclick="reset()"> <i class="fas fa-recycle"></i></button>
+        <button class="btn-red btn" onclick="decrement()"> - </button>
+    </div>
+</section>
+
+<section id="voter-section">
+    <h1 style="text-align: center;"><i>VOTE YOUR LANGUAGE</i></h1>
+    <div class="language-div">
+        <span id="react">0</span>
+        <span>REACT</span>
+        <span  onclick="reactcount()"><button class="span-btn">click here</button></span>
+
+    </div>
+    <div class="language-div">
+        <span id="angular">0</span>
+        <span>ANGULAR</span>
+        <span  onclick="angularcount()"><button class="span-btn">click here</button></span>
+
+    </div>
+    <div class="language-div">
+        <span id="vue">0</span>
+        <span>VUE</span>
+        <span  onclick="vuecount()"><button class="span-btn">click here</button></span>
+
+    </div>
+    <div class="language-div">
+        <span id="java">0</span>
+        <span>JAVA</span>
+        <span  onclick="javacount()"><button class="span-btn">click here</button> </span>
+
+    </div>
+    
+    
+</section>
+    <script src="https://kit.fontawesome.com/9ff0a406c2.js" crossorigin="anonymous"></script>
+</body>
+</html>
